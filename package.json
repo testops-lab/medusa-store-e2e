@@ -1,0 +1,23 @@
+{
+  "name": "medusa-store-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.4.2",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:list": "playwright test --list",
+    "test:report": "playwright show-report",
+    "browsers:install": "playwright install chromium firefox webkit",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.7",
+    "dotenv": "^18.0.10",
+    "typescript": "^7.0.2"
+  }
+}
